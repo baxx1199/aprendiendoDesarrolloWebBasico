@@ -1,0 +1,158 @@
+body{
+    background: radial-gradient(farthest-corner at 50% 0px,  rgb(79, 193, 167),rgb(85, 171, 174), rgb(79, 140, 193));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace
+}
+.container{
+    width: 500px;
+    margin: 100px auto;
+    background: rgb(218, 231, 233);
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.container h1{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin: 0;
+}
+.container .allForm{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+}
+.allForm input[type='text'],
+.allForm input[type='email']
+{
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 2px solid rgb(136, 136, 136);
+    background: transparent;
+    
+}
+
+.allForm .radioDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.allForm .radioDiv input[type='radio']{
+    display: none;
+}
+.allForm .radioDiv label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height:50px;
+    margin: 5px;
+    cursor: pointer;
+    background: rgb(234, 173, 69);
+    color: rgb(243, 243, 243);
+    opacity: .5;
+    
+}
+.allForm .radioDiv label:hover{
+    opacity: 1;
+    
+}
+.allForm .radioDiv label:active{
+    transform: scale(.9,.9);
+}
+
+.allForm .terms{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.allForm .listaError{
+    display: none;
+    width: 100%;
+    background: rgb(204, 53, 53);
+    box-sizing: border-box;
+    color: rgb(229, 229, 229);
+}
+
+.allForm .listaError li{
+    height: 30px;
+    margin: 5px auto;
+    line-height: 30px;
+}
+.allForm input[type='submit']{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(40, 174, 214);
+    color: rgb(229, 229, 229);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+
+    transition: all .3s ease;
+}
+
+.allForm input[type='submit']:hover{
+    background: rgb(40, 141, 214); 
+    box-shadow: 0px 0px 10px 3px #ccc;
+}
+.allForm input[type='submit']:active{
+    transform: scale(.9,.9);
+}
+@keyframes errorInput {
+    0%{
+        border: 1px solid red;
+    }
+    25%{
+        border: 1px solid transparent;
+    }
+    75%{
+        border: 1px solid red;
+    }
+    100%{
+        border: transparent;
+    }
+}
+
+.falta{
+    animation: errorInput 3s ease;
+}
+
+@keyframes errorG {
+    0%{
+        opacity: 1;
+        transform: scale(.9,.9);
+    }
+    25%{
+        opacity: .5;
+        transform: scale(1.0,1.0);
+    }
+    75%{
+        opacity: 1;
+        transform: scale(.9,.9);
+    }
+    100%{
+        opacity: .5;
+        transform: scale(1.0,1.0);
+    }
+}
+
+.faltaG{
+    animation: errorG 3s ease;
+}

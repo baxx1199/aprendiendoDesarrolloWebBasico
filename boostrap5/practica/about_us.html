@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baxx pasteleria</title>
+    <link rel="stylesheet" href="stylesShop.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <header> 
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+    
+            <div class="container">
+                <!-- in this link, can put a icon, logo or name shop  -->
+                <a href="#" class="navbar-brand display-3">Baxx pasteleria</a>
+            
+            
+                    <!-- this button only appears when the size device is medium or minor-->
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="open / close menu"
+                    
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- from this point, the options menu are defined -->
+    
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="home.html" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about_us.html" class="nav-link">Conocenos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="about_us.html" class="nav-link">Contactanos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a 
+                                    href="products.html" 
+                                    class="nav-link dropdown-toggle" 
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    id="dropdown-menu-products"
+                                >
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-products">
+                                    <li><a href="products.html" class="dropdown-item">Pasteles</a></li>
+                                    <li><a href="products.html" class="dropdown-item">Postres</a></li>
+                                    <li><a href="products.html" class="dropdown-item">Galletas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                        <form action="" class="d-flex">
+                            <input type="search" class="form-control mx-2" name="searchBar" id="searchNavbar" aria-label="search" placeholder="Buscar">
+                            
+                            <button type="button" class="btn btn-outline-light">Buscar</button>
+                        </form>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                
+                                <a 
+                                    href="#" 
+                                    class="nav-link dropdown-toggle"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    id="dropdown-menu-profile"
+                                >
+                                User</a>
+                                
+                                <ul class="dropdown-menu " aria-labelledby="dropdown-menu-profile">
+                                    <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                    <li><a href="#" class="dropdown-item">Historial </a></li>
+                                    
+                                    <li><a href="#" class="dropdown-item">Cerrar sesion</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                
+                    </div>
+            </div>
+    
+        </nav>
+    </header>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

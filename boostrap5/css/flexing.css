@@ -1,0 +1,43 @@
+.cont{
+    margin-bottom: 20px;
+    background: rgb(77, 112, 183);
+    color: #f0eeee;
+}
+.cont_2h{
+    height: 100px;
+}
+.cont_3h{
+    height: 300px;
+}
+.cont .caja{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(103, 138, 214);
+    
+}
+.cont .cj1{
+ 
+    background: rgba(196, 73, 73, 0.2);
+   
+    
+}
+.cont .cj2{
+
+    background: rgba(80, 174, 91, 0.2);
+  
+    
+}
+.cont .cj3{
+    
+    background: rgba(139, 151, 84, 0.2);
+    
+    
+}
+.cont .st{
+    font-size: 22px;
+    
+}
+.cont .st3{
+    font-size: 35px;
+    
+}

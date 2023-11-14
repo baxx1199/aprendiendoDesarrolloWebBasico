@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baxx pasteleria</title>
+    <link rel="stylesheet" href="stylesShop.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <header> 
+        <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+    
+            <div class="container">
+                <!-- in this link, can put a icon, logo or name shop  -->
+                <a href="#" class="navbar-brand display-3">Baxx pasteleria</a>
+            
+            
+                    <!-- this button only appears when the size device is medium or minor-->
+                    <button 
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="menu"
+                        aria-expanded="false"
+                        aria-label="open / close menu"
+                    
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- from this point, the options menu are defined -->
+    
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a href="home.html" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about_us.html" class="nav-link">Conocenos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="about_us.html" class="nav-link">Contactanos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a 
+                                    href="products.html" 
+                                    class="nav-link dropdown-toggle" 
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    id="dropdown-menu-products"
+                                >
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-products">
+                                    <li><a href="products.html" class="dropdown-item">Pasteles</a></li>
+                                    <li><a href="products.html" class="dropdown-item">Postres</a></li>
+                                    <li><a href="products.html" class="dropdown-item">Galletas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                        <form action="" class="d-flex">
+                            <input type="search" class="form-control mx-2" name="searchBar" id="searchNavbar" aria-label="search" placeholder="Buscar">
+                            
+                            <button type="button" class="btn btn-outline-light">Buscar</button>
+                        </form>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                
+                                <a 
+                                    href="#" 
+                                    class="nav-link dropdown-toggle"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    id="dropdown-menu-profile"
+                                >
+                                User</a>
+                                
+                                <ul class="dropdown-menu " aria-labelledby="dropdown-menu-profile">
+                                    <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                    <li><a href="#" class="dropdown-item">Historial </a></li>
+                                    
+                                    <li><a href="#" class="dropdown-item">Cerrar sesion</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                
+                    </div>
+            </div>
+    
+        </nav>
+    </header>
+
+
+    <main class="container" id="main">
+        <div class="row">
+            <div class="col">
+
+                <div class="carousel slide carousel-fade" id="products-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid w-100 fis" src="images/pastel 21.jpg" alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+							<div class="carousel-caption bg-transparent text-dark">
+								<h5 class="display-3" >Dulce tentacion</h5>
+								<p class="h3 lead">Comparte con los que amas.</p>
+							</div>
+							<img class="img-fluid w-100" src="images/cupcakes 2.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="img-fluid w-100" src="images/brazo de reina 2.jpg" alt="">
+						</div>
+                    </div>
+
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#products-carousel"
+                        data-bs-slide="prev"
+                        >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+                        <span class="visually-hidden">previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#products-carousel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">next</span>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button
+                            class=" active"
+                            type="button"
+                            data-bs-target="#products-carousel"
+                            data-bs-slide-to="0"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            class=" "
+                            type="button"
+                            data-bs-target="#products-carousel"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            class=" "
+                            type="button"
+                            data-bs-target="#products-carousel"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <section class="row">
+            <div class="col-12 text-center bg-dark text-light my-3">
+                <h2 class="h1">Productos Destacados</h2>
+            </div>
+            <div class="my-2 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-header ch-h align-items-center ">
+                        <h3 class="card-title">Pastel de vainilla</h3>
+                    </div>
+                    <img class="destacados" src="images/pastel 0.jpg" alt="">
+                    <div class="card-body">
+                        
+                        <p class="card-text">
+                            Delicioso pastel de bizcocho firme, sabor vainilla con relleno de frutos rojos.
+                        </p>
+                        <a href="#" class="btn btn-dark">Pedir</a>
+                        <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-header ch-h align-items-center">
+                        <h3 class="card-title">Pastel almendras y amapola</h3>
+                    </div>
+                    <img class="destacados" src="images/pastel 24.jpg" alt="">
+                    <div class="card-body">
+                        
+                        <p class="card-text">
+                            Delicioso pastel de vainilla con pedazos de almendra y semillas de amapola, con relleno de chocolate.
+                        </p>
+                        <div class="card-buttons align-items-end">
+
+                            <a href="#" class="btn btn-dark">Pedir</a>
+                            <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-header ch-h align-items-center">
+                        <h3 class="card-title">Pastel chocolate y vainilla</h3>
+                    </div>
+                    <img class="destacados" src="images/pastel 18.jpg" alt="">
+                    <div class="card-body">
+                        
+                        <p class="card-text">
+                            Delicioso pastel doble altura con capas de bizcocho vainilla y chocolate.
+                        </p>
+                        <a href="#" class="btn btn-dark">Pedir</a>
+                        <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-header ch-h align-items-center">
+                        <h3 class="card-title">Torta de brownie</h3>
+                    </div>
+                    <img class="destacados" src="images/pastel 14.jpg" alt="">
+                    <div class="card-body">
+                        
+                        <p class="card-text">
+                            Delicioso brownie doble altura relleno de arequipe.
+                        </p>
+                        <a href="#" class="btn btn-dark">Pedir</a>
+                        <a href="#" class="btn btn-outline-secondary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container bg-dark text-light ">
+        <div class="row justify-content-between align-items-center">
+            
+                <div class="col text-center">
+                    <h2 class="display-2">Baxx Pasteleria</h2>
+                    <p >Pasteleria Artesanal <br>
+                        desde 2019
+                    </p>
+                </div>
+                <div class="col-auto ">
+                    <a href="https://www.instagram.com/baxx.pasteleria/" class="btn btn-link text-decoration-none text-light" title="ir a instagram" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/Baxx.11.99/" class="btn btn-link text-decoration-none text-light" title="ir a facebook" target="_blank">Facebook</a>
+                    <a href=" https://wa.me/573195183409" class="btn btn-link text-decoration-none text-light" title="Enviar mensaje" target="_blank">+57 000 000 0000</a>
+                    <a href="#" class="btn bg-light text-decoration-none text-dark" >volver al inicio</a>
+                </div>
+            
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LogIn</h1>
+        <form action="" name="formu" id="formy" class="allForm">
+
+            <input type="text" name="nombre" id="inombre" placeholder="Nombre">
+            <input type="email" name="correo" id="icorreo" placeholder="preueba@correo.com">
+            <div class="radioDiv">
+                <input type="radio" name="sexo" id="men" value="men">
+                <label for="men" id="labelMen">Hombre</label>
+    
+                <input type="radio" name="sexo" id="women" value="women">
+                <label for="women" id="labelWomen">Mujer</label>
+            </div>
+            <div class="terms">
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos"  >Terminos y Condiciones</label>
+            </div>
+            
+            
+            <ul class="listaError" id="liErros">
+                
+            </ul>
+    
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
+    <h1></h1>
+    
+    <script src="formulario.js"></script>
+</body>
+</html>

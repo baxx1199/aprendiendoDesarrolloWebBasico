@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body{
+    width: 85%;
+    margin: auto;
+    background: rgb(237, 236, 236);
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 5px solid #ccc;
+}
+.tt1,.slogan{
+    text-align: center;
+}
+.tt1{
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.slogan{
+    font-size: 16px;
+    margin: 0px auto;
+    margin-top: -5px;
+    width: fit-content;
+    padding:0px 10px;
+    background-color: rgba(255, 166, 0, 0.251);
+    border-radius: 15px;
+}
+
+section{
+    margin: 40px auto;
+
+}
+
+section article{
+    width: 80%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 40px;
+}
+section article h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+section article p{
+    margin: 10px auto;
+    padding: 15px 5px;
+    text-align: justify;
+}
+section article p:nth-child(3){
+    background: #c8c8ee;
+}
+
+section button{
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+section .contBtns{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.container2{
+    height: 800px;
+    background: rgb(74, 208, 168);
+}
+.containerPadre{
+    background: yellowgreen;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background: #1d1e46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: all .3s ease;
+    
+}
+
+.cBaxx{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background:  rgb(73, 12, 12);
+}
+@keyframes cajaSeleccion {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.cajaClicada{
+    animation: cajaSeleccion 5s alternate ease;
+}
+footer{
+    height: 200px;
+    background: #1d1e46;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+footer h3, h2{
+    text-align: center;
+}
+
+footer .ttfoot2 {
+    font-size: 50px;
+    color: orange;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <link rel="stylesheet" href="reproductor.css">
+</head>
+<body>
+    <header>
+        <h1>Reproductor</h1>
+       <!--  <div class="search">
+            <small>Ingrese url: </small>
+            <input type="text" id="inputBuscar">
+            <button id="btnBuscar">Cargar</button>
+        </div>
+         -->
+    </header>
+    
+    <section class="container">
+        <video id="videoCanva" class="vc video-js  vjs-big-play-centered" data-setup="{}" width="500" controls>
+            <source src="media/familyGuy.mp4"  type="video/mp4" id="srcVideo">
+            <h2>Tu navegador no soporta Video</h2>
+        </video>
+    </section>
+
+    
+    <footer>
+        <h3>by Baxx11</h3>
+    </footer>
+    <script src="reproductor.js"></script>
+</body>
+</html>

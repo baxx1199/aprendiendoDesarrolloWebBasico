@@ -1,0 +1,30 @@
+.container header{
+    background: orange;
+    margin-bottom: 15px;
+}
+section{
+    background: rgb(212, 212, 234);
+    margin: 20px 10px;
+}
+section .main{
+    background: red;
+}
+section aside{
+    background: rgb(226, 202, 226);
+    
+}
+section aside ul li{
+    list-style: none;
+    height: 50px;
+    
+}
+.cubitos{
+    background: white;
+}
+.cubitos div{
+    background: rgb(134, 233, 215);
+}
+footer{
+    background: rgb(46, 47, 46);
+    color: white;
+}

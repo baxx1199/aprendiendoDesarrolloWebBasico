@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/flexing.css">
+</head>
+<body>
+
+    <!-- 
+        Establecer propiedades según el tamaño del dispositivo
+        I can set the flex property according to the device size
+            .d-flex
+            .d-inline-flex
+            .d-sm-flex
+            .d-sm-inline-flex
+            .d-md-flex
+            .d-md-inline-flex
+            .d-lg-flex
+            .d-lg-inline-flex
+            .d-xl-flex
+            .d-xl-inline-flex
+            .d-xxl-flex
+            .d-xxl-inline-flex
+     -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+                <h4>Tipos de Display</h4>
+                <hr>
+                <div class="bg-primary text-white p-3 d-flex">
+                    <p class="mb-0">Display flex <strong>.d-flex</strong></p>
+
+                </div>
+                <br>
+                <div class="bg-primary text-white p-3 d-inline-flex">
+                    <p class="mb-0">Display inline flex <strong>.d-inline-flex</strong></p>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="row my-5">
+            <div class="col">
+
+                <!-- 
+                    Establecer la direccion de los elementos según el tamaño del dispositivo
+                    Set the direction property of the elements according to the device size
+                 
+                    * ==> |sm|-|md|-|lg|-|xl|-|xxl|
+
+                    .flex-*-row
+                    .flex-*-row-reverse
+                    .flex-*-column
+                    .flex-*-column-reverse
+                -->
+
+                <h3>Direcciones</h3>
+                <hr>
+                <p>.flex-row</p>
+                <div class="cont d-flex flex-row">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+                <p>.flex-row-reverse</p>
+                <div class="cont d-flex flex-row-reverse">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+                <p>.flex-column</p>
+                <div class="cont d-flex flex-column">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+                <p>.flex-column-reverse</p>
+                <div class="cont d-flex flex-column-reverse">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row my-5">
+            <div class="col">
+
+                <!-- 
+                    Justificar el contenido segun el tamaño del dispositivo
+
+                    Justify the content according to the device size
+
+                   * ==> |sm|-|md|-|lg|-|xl|-|xxl|
+
+                    .justify-content-*-start
+                    .justify-content-*-end
+                    .justify-content-*-center
+                    .justify-content-*-between
+                    .justify-content-*-around
+                    .justify-content-*-evenly
+                 -->
+                <h3>Alinear Contenido</h3>
+                <hr>
+                <p>.justify-content-start</p>
+                <div class="cont d-flex flex-row justify-content-start">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+                <p>.justify-content-center</p>
+                <div class="cont d-flex flex-row justify-content-center">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+                <p>.justify-content-end</p>
+                <div class="cont d-flex flex-row justify-content-end">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+                <p>.justify-content-between</p>
+                <div class="cont d-flex flex-row justify-content-between">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                    <div class="caja">Caja 4.</div>
+                </div>
+                <hr>
+                <p>.justify-content-around</p>
+                <div class="cont d-flex flex-row justify-content-around">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                    <div class="caja">Caja 4.</div>
+                </div>
+                <hr>
+                <p>.justify-content-evenly</p>
+                <div class="cont d-flex flex-row justify-content-evenly">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                    <div class="caja">Caja 4.</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row my-5">
+            <div class="col">
+                <!-- 
+                    La propiedad fill permite a un elemento abarcar todo el espacio disponible en su elemento padre
+                    The fill property of a child element allows you to fill all the space available in the parent element
+
+                     * ==> |sm|-|md|-|lg|-|xl|-|xxl|
+
+                    .flex-*-fill
+
+                 -->
+                <h3>Llenar espacio</h3>
+                <p>.flex-fill</p>
+
+                <div class="cont d-flex flex-row">
+                    <div class="caja cj1">este elemento no tiene fill</div>
+                    <div class="caja cj2 flex-fill">Caja 2.</div>
+                    <div class="caja cj3 ">este tampoco.</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row my-5">
+            <div class="col">
+                <!-- 
+                    
+                     * ==> |sm|-|md|-|lg|-|xl|-|xxl|
+
+                    
+
+                 -->
+                <h3>Alinear Elementos (vertical)</h3>
+                <p>.align-items-start</p>
+
+                <div class="cont cont_2h d-flex align-items-start">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+
+                <hr>
+
+               
+                <p>.align-items-center</p>
+
+                <div class="cont cont_2h d-flex align-items-center">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+
+                <p>.align-items-end</p>
+
+                <div class="cont cont_2h d-flex align-items-end">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+                <hr>
+
+               
+                <p>.align-items-baseline</p>
+
+                <div class="cont cont_2h d-flex align-items-baseline">
+                    <div class="caja st">Caja 1 </div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja st3">Caja 3.</div>
+                </div>
+                <hr>
+
+                <p>.align-items-strech</p>
+
+                <div class="cont cont_2h d-flex align-items-strech">
+                    <div class="caja">Caja 1.</div>
+                    <div class="caja">Caja 2.</div>
+                    <div class="caja">Caja 3.</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row my-5">
+            <div class="col">
+                <!-- 
+                    
+                     * ==> |sm|-|md|-|lg|-|xl|-|xxl|
+
+                    
+
+                 -->
+                <h3>Alinear un elemento (vertical)</h3>
+                <p>.align-Self</p>
+
+                <div class="cont cont_2h d-flex justify-content-evenly">
+                    <div class="caja align-self-start">align-self-start</div>
+                    <div class="caja align-self-center">align-self-center</div>
+                    <div class="caja align-self-end">align-Self-end</div>
+                    <div class="caja align-self-baseline">align-self-baseline</div>
+                    <div class="caja align-self-strech">align-Self-strech</div>
+                </div>
+
+               
+
+               
+            </div>
+        </div>
+        <br>
+        <div class="row my-5"> 
+            <div class="col">
+                <h3>Auto Margin</h3>
+                <p>.ms-Auto</p>
+                
+                <div class="cont d-flex justify-content-start">
+                    <div class="caja ">Caja 1.</div>
+                    <div class="caja ">Caja 2.</div>
+                    <div class="caja ">Caja 3.</div>
+                    <div class="caja ">Caja 4.</div>
+                    <div class="caja ms-auto">.ms-Auto.</div>
+                </div>
+                <br>
+                <p>.me-Auto</p>
+                
+                <div class="cont d-flex justify-content-start">
+                    <div class="caja me-auto">.me-auto</div>
+                    <div class="caja ">Caja 2.</div>
+                    <div class="caja ">Caja 3.</div>
+                    <div class="caja ">Caja 4.</div>
+                    <div class="caja">Caja 5.</div>
+                </div>
+                <br>
+                <p>.mb-Auto</p>
+                
+                <div class="cont cont_3h d-flex flex-column align-items-start">
+                    <div class="caja mb-auto">.mb-auto</div>
+                    <div class="caja ">Caja 2.</div>
+                    <div class="caja ">Caja 3.</div>
+                    
+                </div>
+                <br>
+                <p>.mt-Auto</p>
+                
+                <div class="cont cont_3h d-flex flex-column align-items-end">
+                    <div class="caja ">Caja 1.</div>
+                    <div class="caja ">Caja 2.</div>
+                    <div class="caja mt-auto">.mt-autp</div>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row my-5"> 
+            <div class="col">
+                <h3>Wrap</h3>
+                <p>.flex-nowrap</p>
+                
+                <div class="cont d-flex flex-nowrap">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.flex-wrap</p>
+                
+                <div class="cont d-flex flex-wrap">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.flex-wrap-reverse</p>
+                
+                <div class="cont d-flex flex-wrap-reverse">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        <div class="row my-5"> 
+            <div class="col">
+                <h3>Order</h3>
+                <p>.order</p>
+                
+                <div class="cont d-flex">
+                    <div class="caja order-2">Caja 1.</div>
+                    <div class="caja order-3">Caja 2.</div>
+                    <div class="caja order-1">Caja 3</div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row my-5"> 
+            <div class="col">
+                <h3>Alinear contenido multilinea</h3>
+                <p>.align-content-start</p>
+                
+                <div class="cont cont_3h d-flex flex-wrap align-content-start">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.align-content-center</p>
+                
+                <div class="cont cont_3h d-flex flex-wrap align-content-center">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.align-content-end</p>
+                
+                <div class="cont cont_3h d-flex flex-wrap align-content-end">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.align-content-between</p>
+                
+                <div class="cont cont_3h d-flex flex-wrap align-content-between">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.align-content-around</p>
+                
+                <div class="cont cont_3h d-flex flex-wrap align-content-around">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+                <hr>
+                <p>.align-content-strech</p>
+                
+                <div class="cont cont_3h d-flex flex-wrap align-content-strech">
+                    <div class="caja">Caja 1</div>
+                    <div class="caja">Caja 2</div>
+                    <div class="caja">Caja 3</div>
+                    <div class="caja">Caja 4</div>
+                    <div class="caja">Caja 5</div>
+                    <div class="caja">Caja 6</div>
+                    <div class="caja">Caja 7</div>
+                    <div class="caja">Caja 8</div>
+                    <div class="caja">Caja 9</div>
+                    <div class="caja">Caja 10</div>
+                    <div class="caja">Caja 11</div>
+                    <div class="caja">Caja 12</div>
+                    <div class="caja">Caja 13</div>
+                    <div class="caja">Caja 14</div>
+                    <div class="caja">Caja 15</div>
+                    <div class="caja">Caja 16</div>
+                    <div class="caja">Caja 17</div>
+                    <div class="caja">Caja 18</div>
+                    <div class="caja">Caja 19</div>
+                    <div class="caja">Caja 20</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

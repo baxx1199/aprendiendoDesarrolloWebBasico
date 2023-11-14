@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    position: relative;
+    height: fit-content;
+    
+}
+header{
+
+    width: 100%;
+}
+header nav{
+    height: 40px;
+    background: rgb(33, 33, 41);
+
+    
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header h2 {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    
+}
+header nav ul .itm a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: auto 20px;
+    height: 40px;
+    color: #ccc;
+    
+}
+header nav ul .itm a:hover{
+    background: rgb(46, 46, 57);
+    
+}
+/* Section Main */
+section{
+    width: 60%;
+    overflow: hidden;
+    float: left;
+    overflow: hidden;
+    padding: 20px 0;
+    min-width: 400px;
+   
+
+}
+section article{
+    width: 90%;
+    margin: 10px auto;
+   
+    height: fit-content;
+    
+    background: rgb(209, 209, 209);
+    border-radius: 3px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section article h1{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+section article img{
+    width: 90%;
+    height: 200px;
+    border-radius: 3px;
+    
+}
+section article p{
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+section article h2{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@keyframes animacionBtn {
+    
+    0%{ 
+        transform: rotate(0deg) ;
+        z-index: 10;
+        
+        
+    }
+    20%{ 
+        transform: rotate(90deg) scale(1.2,1.2);
+        z-index: 10;
+    }
+    40%{ 
+        transform: rotate(120deg) scale(1.3,1.3) ;
+        z-index: 10;
+    }
+    60%{ 
+        transform: rotate(180deg) scale(1.3,1.3) ;
+        z-index: 10;
+
+    }
+    80%{ 
+        transform: rotate(240deg) scale(1.2,1.2);
+        z-index: 10;
+    }
+    100%{ 
+        transform: rotate(360deg) ;
+        z-index: 10;
+    }
+}
+section article .cont_btns{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section article .btn_art{
+    width: 30%;
+    min-width: 130px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: auto 10px;
+    cursor: pointer;
+    
+}
+section article .btn_art:hover{
+    background: rgb(182, 182, 182);
+    animation: animacionBtn .3s linear ;
+}
+
+section article .btn_art:hover, aside ul .itm_op:hover{
+    background: rgb(182, 182, 182);
+    
+}
+/* Side bar */
+aside{
+    width: 28%;
+    min-width: 200px;
+    float: right;
+    padding: 60px 0;
+    background: rgb(209, 209, 209);
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+aside h2{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+aside ul{
+    width: 80%;
+    margin: 20px auto;
+}
+aside ul .itm_op{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Styles of footer ----------------------------------- */
+footer{
+    background: rgb(33, 33, 41);
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+footer img{
+    width: 100px;
+    height: 150px;
+    border-radius: 100%;
+    
+}
+footer ul{
+    width: 50%;
+    min-width: 200px;
+}
+footer ul .links{
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    margin: 5px auto;
+    padding: 5px 0;
+    color: #ccc;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+footer ul .links:hover{
+    background: rgb(46, 46, 57);
+}
+
+@media screen and (max-width:1000px) {
+    
+
+    section article .cont_btns .btn_art{
+        width: 45%;
+        max-width: 45%;
+        margin: 10px 5px;
+        min-width: 110px;
+    }
+    section article .cont_btns .bt_3{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:800px) {
+    section{
+        min-width: 350px;
+    }
+
+    section, aside{
+        float: none;
+        width: 90%;
+        margin: auto;
+        
+
+    }
+    
+    section article .cont_btns{
+        width: 100%;
+        justify-content: space-around;
+    }
+    header nav ul .itm a{
+        display: inline-block;
+        padding: 10px 5px;
+        margin: auto;
+        height: 40px;
+        color: #ccc;
+        
+    }
+    
+}

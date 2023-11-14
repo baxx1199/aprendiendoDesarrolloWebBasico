@@ -1,0 +1,49 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: #21295e;
+    
+}
+body .calculadora{
+    background: #eee5e9;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+body .calculadora input, h2 , button{
+    background: rgb(255, 255, 255);
+    width: 200px;
+    height: 40px;
+    border: none;
+    margin: auto;
+    text-align: center;
+    
+}
+body .calculadora  h2 {
+    line-height: 40px;
+    font-size: 22px;
+    
+}
+body .calculadora small{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px auto;
+    color: rgb(199, 106, 0);
+}
+
+body .calculadora button{
+    margin: 20px auto;
+    background: rgb(199, 106, 0);
+    color: white;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+body .calculadora button:active{
+    transform: scale(.9,.9);
+}
+
+

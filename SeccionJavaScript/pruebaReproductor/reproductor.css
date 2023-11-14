@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 760px;
+    background: rgb(146, 218, 208);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    height: 600px;
+    padding: 60px 20px;
+    background: #262446;
+    
+}
+
+ 
+  .video-js .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 500px;
+  }
+  
+h1{
+    width: 600px;
+    height: 200px;
+    margin: 20px auto ;
+    color: #ececec;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    border-radius: 15px;
+    border: 3.5px solid #ccc;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container .vc{
+    width: 760px;
+    height: 500px;
+    position: absolute;
+    top: -250px;
+    padding: 20px 40px;
+    border: 5px solid black;
+}
+
+.video-js .vjs-control-bar {
+    color: rgb(0, 140, 255);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.video-js .vjs-play-control{
+
+    transition: all .3s ease;
+    
+
+}
+.vjs-icon-play:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before ,
+.vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before,
+.video-js *, .video-js *:before, .video-js *:after 
+
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.vjs-icon-play:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before ,
+.vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before,
+.vjs-icon-picture-in-picture-enter:before, .video-js .vjs-picture-in-picture-control .vjs-icon-placeholder:before{
+    font-size: 25px;
+}
+.vjs-icon-play:before, .video-js .vjs-play-control:active .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    transform: scale(.9,.9);
+}
+.vjs-icon-fullscreen-enter, .video-js .vjs-fullscreen-control .vjs-icon-placeholder {
+    font-family: VideoJS;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+ 
+
+
+
+footer{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background: #262446;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

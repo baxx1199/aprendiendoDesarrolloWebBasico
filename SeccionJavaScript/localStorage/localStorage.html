@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <link rel="stylesheet" href="local.css">
+</head>
+<body onload="mostrar()">
+
+    <header>
+        <h1 class="tituloH">LocalStorage</h1>
+    </header>
+    <section>
+        <div class="container areaIngreso">
+            <label for="nombre">Ingrese El nombre que desea guardar</label>
+            <input type="text" title="nombre" name="nombre" id="valorIngresado" class="iV">
+            <button class="btn btn_guardar" id="btnSave">Guardar</button>
+        </div>
+        <div class="container areaMostrar">
+            <div class="listado" id="lista">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        <tr>
+                            <td>julian</td>
+                        </tr>
+                        <tr>
+                            <td>laura</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <button class="btn btn_mostrar" id="btnWatch">mostrar</button> -->
+        </div>
+    </section>
+    <footer></footer>
+    <script src="localstorage.js"></script>
+</body>
+</html>
